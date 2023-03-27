@@ -1,0 +1,39 @@
+<html>
+  <!DOCTYPE html>
+  <!-- saved from url=(0024)https://www.dejan.works/ -->
+  <html lang="en" class="no-js">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+      <!-- CSS -->
+      {% load static %}
+      <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+
+      <!-- Toggle button mobile -->
+      <script src="static/jquery.min.js.download"></script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $(".mobile-tap-area").click(function () {
+            $(".toggle-mobile-first").toggle();
+            $(".toggle-mobile-second").toggle();
+          });
+        });
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body
+      class="website-background-black"
+      data-new-gr-c-s-check-loaded="14.1101.0"
+      data-gr-ext-installed=""
+      style="font-family: 'Open Sans', sans-serif"
+    >
+      {% block content %} {% endblock content %}
+    </body>
+  </html>
+</html>

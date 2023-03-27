@@ -1,0 +1,108 @@
+{% extends 'base/base.html' %} {% block content %}
+<div class="block-image-overflow">
+  <!--- Block hero image overflow --->
+  {% load static %}
+  <div class="max-width">
+    <div class="logo">
+      <div class="logo-inner">
+        <a href="{% url 'home' %}">
+          <div class="label-logo on-hover--40 text-color-white"></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="top-bottom-margin">
+      <div class="hide-text-block">
+        <h2 class="text-color-white animate">I am a python developer.</h2>
+      </div>
+
+      <div class="hero-image animate delay02">
+        <img
+          draggable="false"
+          class=""
+          src="{% static 'static/images/85719.jpg' %}"
+          data-src="../img/Dejan.png"
+        />
+        <noscript><img draggable="false" src="../img/Dejan.png" /></noscript>
+      </div>
+
+      <div class="max-width-70 text-color-white">
+        <h4>About</h4>
+        <p class="size-large">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <p>
+          I like to develop expertise in a number of areas over the course of my
+          life and career. My personality type is
+          <a
+            class="underline text-color-white"
+            href="http://www.personalitypage.com/ENTJ.html"
+            target="_blank"
+          >
+            ENTJ</a
+          >. I currently work remotely with a selected freelance client base and
+          are open for new opportunities.
+        </p>
+        <p>
+          You can read more about my biography, experience, skills, education
+          and much more in the PDF attached bellow:
+        </p>
+        <div class="links" data-aos="fade-up">
+          {% load static %}
+          <a
+            class="on-hover-40 text-color-red"
+            href="/static/Resume.pdf"
+            target="_blank"
+            >My resume (pdf 109kb)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end max-width --->
+</div>
+{% endblock content %}

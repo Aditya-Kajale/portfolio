@@ -1,0 +1,64 @@
+{% extends 'base/base.html' %} {% block content %}
+<div class="max-width">
+  <div class="logo">
+    <div class="logo-inner">
+      <a href="{% url 'home' %}">
+        <div class="label-logo on-hover--40 text-color-white"></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="top-bottom-margin">
+    <div class="hide-text-block">
+      <h2 class="text-color-white animate">Let's make something great!</h2>
+    </div>
+
+    <div class="max-width-70 text-color-white animate delay02">
+      <h4>Contact</h4>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+      <p>Feel free to reach out through any platforms bellow:</p>
+
+      <div class="links">
+        <a class="on-hover-40 text-color-red label-email copy-email"></a>
+        <a class="on-hover-40 text-color-red" href="#" target="_blank"
+          >Dribbble</a
+        >
+        <a class="on-hover-40 text-color-red" href="#" target="_blank"
+          >Instagram</a
+        >
+        <a class="on-hover-40 text-color-red" href="#" target="_blank"
+          >Twitter</a
+        >
+        <a class="on-hover-40 text-color-red" href="#" target="_blank"
+          >Linkedin</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/static/clipboard.min.js.download"></script>
+<script>
+  var clipboard = new ClipboardJS(".copy-email", {
+    text: function () {
+      return "adityakajale123@gmail.com";
+    },
+  });
+  clipboard.on("success", function (e) {
+    console.log(e);
+  });
+  clipboard.on("error", function (e) {
+    console.log(e);
+  });
+</script>
+{% endblock content %}
